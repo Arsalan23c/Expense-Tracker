@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <div class="input-section">
+            <label for="total-amount">Income Amount:</label>
+            <input type="number" id="total-amount" placeholder="Enter Income Amount">
+            <button onclick="setTotalAmount()">Set Amount</button>
+        </div>
+        <div class="input-section">
+            <label for="expense-amount">Expense Amount:</label>
+            <input type="number" id="expense-amount" placeholder="Enter Expense Amount">
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+        <div class="output-section">
+            <h2>Amount Remaining: <span id="remaining-amount">0</span></h2>
+            <h3>Transaction History:</h3>
+            <ul id="expense-history"></ul>
+        </div>
+    <script src="app.js"></script>
+</body>
+</html>
